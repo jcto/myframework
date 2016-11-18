@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function a(){
+				console.log(arguments)
+			}
+			var b=a.bind(null,'cao')
+			var c=a.bind(null)
+			console.log(b)
+		</script>
+	</body>
+</html>

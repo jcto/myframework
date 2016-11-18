@@ -1,0 +1,29 @@
+{
+  "name": "myframework",
+  "version": "1.0.0",
+  "description": "chn's framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "better-npm-run dev"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "nodemon bin/server --ignore dist --ignore coverage --ignore tests --ignore src",
+      "env": {
+        "NODE_ENV": "development",
+        "DEBUG": "app:*"
+      }
+    }
+  },
+  "author": "chn",
+  "license": "ISC",
+  "devDependencies": {
+    "better-npm-run": "^0.0.13",
+    "debug": "^2.3.2",
+    "express": "^4.14.0",
+    "ip": "^1.1.4",
+    "nodemon": "^1.11.0",
+    "opn": "^4.0.2"
+  }
+}
