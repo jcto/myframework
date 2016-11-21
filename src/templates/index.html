@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>phone_recharge</title>
+    <script src='/static/zepto.min.js'></script>
+	<script src="/static/framework.js"></script>
+	<script src="/static/commons.js"></script>
+  </head>
+  <body>
+     <div id="app">
+     	<header-component><span v-show="slotShow"  v-on:click='goRecords()' v-text="slotName"></span></header-component>
+	  <h1>Hello App!</h1>
+	  <p>
+	    <!-- use router-link component for navigation. -->
+	    <!-- specify the link by passing the `to` prop. -->
+	    <!-- <router-link> will be rendered as an `<a>` tag by default -->
+	    <router-link to="/foo">Go to Foo</router-link>
+	    <router-link to="/bar">Go to Bar</router-link>
+	  </p>
+	  <!-- route outlet -->
+	  <!-- component matched by the route will render here -->
+	  <router-view></router-view>
+	</div>
+
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>
