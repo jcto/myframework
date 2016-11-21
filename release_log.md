@@ -13,4 +13,7 @@
 * 添加插件 [HtmlWebpackPlugin](https://github.com/ampedandwired/html-webpack-plugin)
 * 添加es6功能
 
-## 版本v0.3
+## 版本v0.3 2016.11.21
+* 添加vue框架系：vue,vue-router,vuex,vue-loader
+* 添加less-loader
+

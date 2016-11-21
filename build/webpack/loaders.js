@@ -9,5 +9,11 @@ const jsBabel={
      exclude: /node_modules/,
      loader: 'babel',
 }
+const vueLoader={
+	test:/\.vue$/,
+	include: projectRoot,
+	loader:'vue'
+}
 loaders.push(jsBabel)
+loaders.push(vueLoader)
 module.exports=loaders

@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>phone_recharge</title>
-    <script src='/static/zepto.min.js'></script>
-	<script src="/static/framework.js"></script>
-	<script src="/static/commons.js"></script>
-  </head>
-  <body>
-     <div id="app">
-     	<header-component><span v-show="slotShow"  v-on:click='goRecords()' v-text="slotName"></span></header-component>
-	  <h1>Hello App!</h1>
-	  <p>
-	    <!-- use router-link component for navigation. -->
-	    <!-- specify the link by passing the `to` prop. -->
-	    <!-- <router-link> will be rendered as an `<a>` tag by default -->
-	    <router-link to="/foo">Go to Foo</router-link>
-	    <router-link to="/bar">Go to Bar</router-link>
-	  </p>
-	  <!-- route outlet -->
-	  <!-- component matched by the route will render here -->
-	  <router-view></router-view>
-	</div>
 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>chn's framework</title>
+	</head>
 
-    <!-- built files will be auto injected -->
-  </body>
+	<body>
+		<div id="app">
+			<h1>Hello App!</h1>
+			<p>
+				<!-- 使用 router-link 组件来导航. -->
+				<!-- 通过传入 `to` 属性指定链接. -->
+				<!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+				<router-link to="/foo">Go to Foo</router-link>
+				<router-link to="/bar">Go to Bar</router-link>
+			</p>
+			<!-- 路由出口 -->
+			<!-- 路由匹配到的组件将渲染在这里 -->
+			<router-view></router-view>
+		</div>
+	</body>
+
 </html>
